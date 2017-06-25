@@ -1,6 +1,10 @@
 # CakePHP Application Skeleton
 
-[![Build Status](https://img.shields.io/travis/cakephp/app/master.svg?style=flat-square)](https://travis-ci.org/cakephp/app)
+Master Branch: [![Build Status](https://travis-ci.org/CubScoutCake/BadgeReporting.svg?branch=master)](https://travis-ci.org/CubScoutCake/BadgeReporting)
+[![Dependency Status](https://www.versioneye.com/user/projects/59502245368b080067e6018b/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/59502245368b080067e6018b)
+
+Development Branch: [![Build Status](https://travis-ci.org/CubScoutCake/BadgeReporting.svg?branch=development)](https://travis-ci.org/CubScoutCake/BadgeReporting)
+
 [![License](https://img.shields.io/packagist/l/cakephp/app.svg?style=flat-square)](https://packagist.org/packages/cakephp/app)
 
 A skeleton for creating applications with [CakePHP](http://cakephp.org) 3.x.
