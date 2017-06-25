@@ -133,5 +133,13 @@ class DistrictsControllerTest extends IntegrationTestCase
         $this->delete('/districts/delete/2');
 
         $this->assertRedirect();
+
+        $this->delete('/districts/delete/2');
+
+        $this->assertResponseError();
+
+        $this->delete('/districts/delete/99');
+
+        $this->assertResponseError();
     }
 }

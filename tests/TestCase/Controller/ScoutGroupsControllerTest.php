@@ -141,5 +141,13 @@ class ScoutGroupsControllerTest extends IntegrationTestCase
         $this->delete('/scout-groups/delete/2');
 
         $this->assertRedirect();
+
+        $this->delete('/scout-groups/delete/2');
+
+        $this->assertResponseError();
+
+        $this->delete('/scout-groups/delete/99');
+
+        $this->assertResponseError();
     }
 }

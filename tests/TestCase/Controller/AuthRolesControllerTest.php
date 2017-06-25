@@ -135,5 +135,13 @@ class AuthRolesControllerTest extends IntegrationTestCase
         $this->delete('/auth-roles/delete/2');
 
         $this->assertRedirect();
+
+        $this->delete('/auth-roles/delete/2');
+
+        $this->assertResponseError();
+
+        $this->delete('/auth-roles/delete/99');
+
+        $this->assertResponseError();
     }
 }

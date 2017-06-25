@@ -135,5 +135,13 @@ class RolesControllerTest extends IntegrationTestCase
         $this->delete('/roles/delete/2');
 
         $this->assertRedirect();
+
+        $this->delete('/roles/delete/2');
+
+        $this->assertResponseError();
+
+        $this->delete('/roles/delete/99');
+
+        $this->assertResponseError();
     }
 }

@@ -132,5 +132,13 @@ class SectionTypesControllerTest extends IntegrationTestCase
         $this->delete('/section-types/delete/2');
 
         $this->assertRedirect();
+
+        $this->delete('/section-types/delete/2');
+
+        $this->assertResponseError();
+
+        $this->delete('/section-types/delete/99');
+
+        $this->assertResponseError();
     }
 }

@@ -145,8 +145,16 @@ class UsersControllerTest extends IntegrationTestCase
         $this->enableCsrfToken();
         $this->enableSecurityToken();
 
-        $this->delete('/users/delete/1');
+        $this->delete('/users/delete/2');
 
         $this->assertRedirect();
+
+        $this->delete('/users/delete/2');
+
+        $this->assertResponseError();
+
+        $this->delete('/users/delete/99');
+
+        $this->assertResponseError();
     }
 }
