@@ -68,10 +68,19 @@ class SectionTypesControllerTest extends IntegrationTestCase
         $this->post('/section-types/add', $data);
 
         $this->assertResponseSuccess();
+        $this->assertRedirect();
 
         $auth_role = TableRegistry::get('SectionTypes');
         $query = $auth_role->find()->where(['section_type' => $data['section_type']]);
         $this->assertEquals(1, $query->count());
+
+        $data = [
+            'section_type' => 'Type2',
+        ];
+
+        $this->post('/section-types/add', $data);
+
+        $this->assertResponseOk();
     }
 
     /**
@@ -95,10 +104,19 @@ class SectionTypesControllerTest extends IntegrationTestCase
         $this->post('/section-types/edit/1', $data);
 
         $this->assertResponseSuccess();
+        $this->assertRedirect();
 
         $auth_role = TableRegistry::get('SectionTypes');
         $query = $auth_role->find()->where(['section_type' => $data['section_type']]);
         $this->assertEquals(1, $query->count());
+
+        $data = [
+            'section_type' => 'Type2',
+        ];
+
+        $this->post('/section-types/edit/1', $data);
+
+        $this->assertResponseOk();
     }
 
     /**

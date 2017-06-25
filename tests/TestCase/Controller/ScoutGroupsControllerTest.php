@@ -73,10 +73,21 @@ class ScoutGroupsControllerTest extends IntegrationTestCase
         $this->post('/scout-groups/add', $data);
 
         $this->assertResponseSuccess();
+        $this->assertRedirect();
 
         $auth_role = TableRegistry::get('ScoutGroups');
         $query = $auth_role->find()->where(['scout_group' => $data['scout_group']]);
         $this->assertEquals(1, $query->count());
+
+        $data = [
+            'scout_group' => 'ScoutGroup2',
+            'district_id' => 1,
+            'number_stripped' => 8,
+        ];
+
+        $this->post('/scout-groups/add', $data);
+
+        $this->assertResponseOk();
     }
 
     /**
@@ -102,10 +113,19 @@ class ScoutGroupsControllerTest extends IntegrationTestCase
         $this->post('/scout-groups/edit/1', $data);
 
         $this->assertResponseSuccess();
+        $this->assertRedirect();
 
         $auth_role = TableRegistry::get('ScoutGroups');
         $query = $auth_role->find()->where(['scout_group' => $data['scout_group']]);
         $this->assertEquals(1, $query->count());
+
+        $data = [
+            'scout_group' => 'ScoutGroup2',
+        ];
+
+        $this->post('/scout-groups/edit/1', $data);
+
+        $this->assertResponseOk();
     }
 
     /**

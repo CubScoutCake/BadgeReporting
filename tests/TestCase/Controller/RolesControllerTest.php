@@ -71,10 +71,19 @@ class RolesControllerTest extends IntegrationTestCase
         $this->post('/roles/add', $data);
 
         $this->assertResponseSuccess();
+        $this->assertRedirect();
 
         $auth_role = TableRegistry::get('Roles');
         $query = $auth_role->find()->where(['role' => $data['role']]);
         $this->assertEquals(1, $query->count());
+
+        $data = [
+            'role' => 'Role2'
+        ];
+
+        $this->post('/roles/add', $data);
+
+        $this->assertResponseOk();
     }
 
     /**
@@ -98,10 +107,19 @@ class RolesControllerTest extends IntegrationTestCase
         $this->post('/roles/edit/1', $data);
 
         $this->assertResponseSuccess();
+        $this->assertRedirect();
 
         $auth_role = TableRegistry::get('Roles');
         $query = $auth_role->find()->where(['role' => $data['role']]);
         $this->assertEquals(1, $query->count());
+
+        $data = [
+            'role' => 'Role2'
+        ];
+
+        $this->post('/roles/edit/1', $data);
+
+        $this->assertResponseOk();
     }
 
     /**

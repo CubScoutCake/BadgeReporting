@@ -84,10 +84,19 @@ class UsersControllerTest extends IntegrationTestCase
         $this->post('/users/add', $data);
 
         $this->assertResponseSuccess();
+        $this->assertRedirect();
 
         $auth_role = TableRegistry::get('Users');
         $query = $auth_role->find()->where(['username' => $data['username']]);
         $this->assertEquals(1, $query->count());
+
+        $data = [
+            'username' => 'User2',
+        ];
+
+        $this->post('/users/add', $data);
+
+        $this->assertResponseOk();
     }
 
     /**
@@ -111,10 +120,19 @@ class UsersControllerTest extends IntegrationTestCase
         $this->post('/users/edit/1', $data);
 
         $this->assertResponseSuccess();
+        $this->assertRedirect();
 
         $auth_role = TableRegistry::get('Users');
         $query = $auth_role->find()->where(['username' => $data['username']]);
         $this->assertEquals(1, $query->count());
+
+        $data = [
+            'username' => 'User2',
+        ];
+
+        $this->post('/users/edit/1', $data);
+
+        $this->assertResponseOk();
     }
 
     /**

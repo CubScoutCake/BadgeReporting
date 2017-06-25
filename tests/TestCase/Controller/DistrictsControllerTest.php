@@ -64,12 +64,23 @@ class DistrictsControllerTest extends IntegrationTestCase
             'short_district' => 'New',
         ];
 
-        $this->post('/districts/add/', $data);
+        $this->post('/districts/add', $data);
 
         $this->assertResponseSuccess();
+        $this->assertRedirect();
+
         $articles = TableRegistry::get('Districts');
         $query = $articles->find()->where(['district' => $data['district']]);
         $this->assertEquals(1, $query->count());
+
+        $data = [
+            'district' => 'District2',
+            'short_district' => 'D2',
+        ];
+
+        $this->post('/districts/add', $data);
+
+        $this->assertResponseOk();
     }
 
     /**
@@ -94,9 +105,19 @@ class DistrictsControllerTest extends IntegrationTestCase
         $this->post('/districts/edit/1', $data);
 
         $this->assertResponseSuccess();
+        $this->assertRedirect();
+
         $articles = TableRegistry::get('Districts');
         $query = $articles->find()->where(['district' => $data['district']]);
         $this->assertEquals(1, $query->count());
+
+        $data = [
+            'district' => 'District2',
+        ];
+
+        $this->post('/districts/edit/1', $data);
+
+        $this->assertResponseOk();
     }
 
     /**
