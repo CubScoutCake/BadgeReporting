@@ -17,7 +17,8 @@
         "cakephp/debug_kit": "~3.2",
         "cakephp/bake": "~1.1",
         "phpunit/phpunit": "@stable",
-        "cakephp/cakephp-codesniffer": "@stable"
+        "cakephp/cakephp-codesniffer": "@stable",
+        "codeclimate/php-test-reporter": "dev-master"
     },
     "suggest": {
         "markstory/asset_compress": "An asset compression plugin which provides file concatenation and a flexible filter system for preprocessing and minification.",
@@ -46,7 +47,7 @@
         ],
         "cs-check": "phpcs --colors -p --extensions=php --standard=vendor/cakephp/cakephp-codesniffer/CakePHP ./src ./tests",
         "cs-fix": "phpcbf --colors --extensions=php --standard=vendor/cakephp/cakephp-codesniffer/CakePHP ./src ./tests",
-        "test": "phpunit --colors=always"
+        "test": "phpunit --colors=always --coverage-clover=clover.xml"
     },
     "prefer-stable": true
 }

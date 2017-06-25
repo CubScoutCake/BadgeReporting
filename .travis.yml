@@ -23,17 +23,18 @@ matrix:
 
 before_script:
   - phpenv rehash
-  - composer install
+  - composer install --dev
   - psql -c 'create database badges;' -U postgres
   - sh -c "bin/cake database build"
   - sh -c "bin/cake database seed"
 
 script:
   - composer cs-check
-  - sh -c "vendor/bin/phpunit"
+  - composer test
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
+  - vendor/bin/test-reporter
 
 notifications:
   email: true
@@ -47,14 +48,3 @@ notifications:
 addons:
     code_climate:
         repo_token: CodeClimateTokenForReplacement
-
-
-
-
-
-
-
-
-
-
-

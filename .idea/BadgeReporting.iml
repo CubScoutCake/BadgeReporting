@@ -75,12 +75,26 @@
     <orderEntry type="module-library">
       <library name="PHARS">
         <CLASSES>
-          <root url="phar://$MODULE_DIR$/vendor/phar-io/manifest/tests/_fixture/test.phar/" />
+          <root url="phar://$MODULE_DIR$/vendor/padraic/phar-updater/tests/Humbug/Test/SelfUpdate/_files/test-nopubkey.phar/" />
+          <root url="phar://$MODULE_DIR$/vendor/padraic/phar-updater/tests/Humbug/Test/SelfUpdate/_files/test.phar/" />
           <root url="phar://$MODULE_DIR$/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.1.phar/" />
+          <root url="phar://$MODULE_DIR$/vendor/padraic/phar-updater/tests/Humbug/Test/SelfUpdate/_files/build/nosig.phar/" />
+          <root url="phar://$MODULE_DIR$/vendor/padraic/phar-updater/tests/Humbug/Test/SelfUpdate/_files/build/badkey.phar/" />
+          <root url="phar://$MODULE_DIR$/vendor/padraic/phar-updater/tests/Humbug/Test/SelfUpdate/_files/build/badsig.phar/" />
+          <root url="phar://$MODULE_DIR$/vendor/padraic/phar-updater/tests/Humbug/Test/SelfUpdate/_files/build/old.phar/" />
+          <root url="phar://$MODULE_DIR$/vendor/padraic/phar-updater/tests/Humbug/Test/SelfUpdate/_files/build/new.phar/" />
+          <root url="phar://$MODULE_DIR$/vendor/phar-io/manifest/tests/_fixture/test.phar/" />
         </CLASSES>
         <SOURCES>
-          <root url="phar://$MODULE_DIR$/vendor/phar-io/manifest/tests/_fixture/test.phar/" />
+          <root url="phar://$MODULE_DIR$/vendor/padraic/phar-updater/tests/Humbug/Test/SelfUpdate/_files/test-nopubkey.phar/" />
+          <root url="phar://$MODULE_DIR$/vendor/padraic/phar-updater/tests/Humbug/Test/SelfUpdate/_files/test.phar/" />
           <root url="phar://$MODULE_DIR$/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.1.phar/" />
+          <root url="phar://$MODULE_DIR$/vendor/padraic/phar-updater/tests/Humbug/Test/SelfUpdate/_files/build/nosig.phar/" />
+          <root url="phar://$MODULE_DIR$/vendor/padraic/phar-updater/tests/Humbug/Test/SelfUpdate/_files/build/badkey.phar/" />
+          <root url="phar://$MODULE_DIR$/vendor/padraic/phar-updater/tests/Humbug/Test/SelfUpdate/_files/build/badsig.phar/" />
+          <root url="phar://$MODULE_DIR$/vendor/padraic/phar-updater/tests/Humbug/Test/SelfUpdate/_files/build/old.phar/" />
+          <root url="phar://$MODULE_DIR$/vendor/padraic/phar-updater/tests/Humbug/Test/SelfUpdate/_files/build/new.phar/" />
+          <root url="phar://$MODULE_DIR$/vendor/phar-io/manifest/tests/_fixture/test.phar/" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -95,9 +109,11 @@
           <root url="file://$MODULE_DIR$/vendor/cakephp/debug_kit" />
           <root url="file://$MODULE_DIR$/vendor/cakephp/migrations" />
           <root url="file://$MODULE_DIR$/vendor/cakephp/plugin-installer" />
+          <root url="file://$MODULE_DIR$/vendor/codeclimate/php-test-reporter" />
           <root url="file://$MODULE_DIR$/vendor/composer" />
           <root url="file://$MODULE_DIR$/vendor/dnoegel/php-xdg-base-dir" />
           <root url="file://$MODULE_DIR$/vendor/doctrine/instantiator" />
+          <root url="file://$MODULE_DIR$/vendor/guzzle/guzzle" />
           <root url="file://$MODULE_DIR$/vendor/jakub-onderka/php-console-color" />
           <root url="file://$MODULE_DIR$/vendor/jakub-onderka/php-console-highlighter" />
           <root url="file://$MODULE_DIR$/vendor/jdorn/sql-formatter" />
@@ -106,6 +122,8 @@
           <root url="file://$MODULE_DIR$/vendor/muffin/trash" />
           <root url="file://$MODULE_DIR$/vendor/myclabs/deep-copy" />
           <root url="file://$MODULE_DIR$/vendor/nikic/php-parser" />
+          <root url="file://$MODULE_DIR$/vendor/padraic/humbug_get_contents" />
+          <root url="file://$MODULE_DIR$/vendor/padraic/phar-updater" />
           <root url="file://$MODULE_DIR$/vendor/phar-io/manifest" />
           <root url="file://$MODULE_DIR$/vendor/phar-io/version" />
           <root url="file://$MODULE_DIR$/vendor/phpdocumentor/reflection-common" />
@@ -123,6 +141,7 @@
           <root url="file://$MODULE_DIR$/vendor/psr/log" />
           <root url="file://$MODULE_DIR$/vendor/psy/psysh" />
           <root url="file://$MODULE_DIR$/vendor/robmorgan/phinx" />
+          <root url="file://$MODULE_DIR$/vendor/satooshi/php-coveralls" />
           <root url="file://$MODULE_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
           <root url="file://$MODULE_DIR$/vendor/sebastian/comparator" />
           <root url="file://$MODULE_DIR$/vendor/sebastian/diff" />
@@ -141,10 +160,12 @@
           <root url="file://$MODULE_DIR$/vendor/symfony/config" />
           <root url="file://$MODULE_DIR$/vendor/symfony/console" />
           <root url="file://$MODULE_DIR$/vendor/symfony/debug" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/event-dispatcher" />
           <root url="file://$MODULE_DIR$/vendor/symfony/filesystem" />
           <root url="file://$MODULE_DIR$/vendor/symfony/finder" />
           <root url="file://$MODULE_DIR$/vendor/symfony/polyfill-mbstring" />
           <root url="file://$MODULE_DIR$/vendor/symfony/process" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/stopwatch" />
           <root url="file://$MODULE_DIR$/vendor/symfony/var-dumper" />
           <root url="file://$MODULE_DIR$/vendor/symfony/yaml" />
           <root url="file://$MODULE_DIR$/vendor/theseer/tokenizer" />
@@ -160,9 +181,11 @@
           <root url="file://$MODULE_DIR$/vendor/cakephp/debug_kit" />
           <root url="file://$MODULE_DIR$/vendor/cakephp/migrations" />
           <root url="file://$MODULE_DIR$/vendor/cakephp/plugin-installer" />
+          <root url="file://$MODULE_DIR$/vendor/codeclimate/php-test-reporter" />
           <root url="file://$MODULE_DIR$/vendor/composer" />
           <root url="file://$MODULE_DIR$/vendor/dnoegel/php-xdg-base-dir" />
           <root url="file://$MODULE_DIR$/vendor/doctrine/instantiator" />
+          <root url="file://$MODULE_DIR$/vendor/guzzle/guzzle" />
           <root url="file://$MODULE_DIR$/vendor/jakub-onderka/php-console-color" />
           <root url="file://$MODULE_DIR$/vendor/jakub-onderka/php-console-highlighter" />
           <root url="file://$MODULE_DIR$/vendor/jdorn/sql-formatter" />
@@ -171,6 +194,8 @@
           <root url="file://$MODULE_DIR$/vendor/muffin/trash" />
           <root url="file://$MODULE_DIR$/vendor/myclabs/deep-copy" />
           <root url="file://$MODULE_DIR$/vendor/nikic/php-parser" />
+          <root url="file://$MODULE_DIR$/vendor/padraic/humbug_get_contents" />
+          <root url="file://$MODULE_DIR$/vendor/padraic/phar-updater" />
           <root url="file://$MODULE_DIR$/vendor/phar-io/manifest" />
           <root url="file://$MODULE_DIR$/vendor/phar-io/version" />
           <root url="file://$MODULE_DIR$/vendor/phpdocumentor/reflection-common" />
@@ -188,6 +213,7 @@
           <root url="file://$MODULE_DIR$/vendor/psr/log" />
           <root url="file://$MODULE_DIR$/vendor/psy/psysh" />
           <root url="file://$MODULE_DIR$/vendor/robmorgan/phinx" />
+          <root url="file://$MODULE_DIR$/vendor/satooshi/php-coveralls" />
           <root url="file://$MODULE_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
           <root url="file://$MODULE_DIR$/vendor/sebastian/comparator" />
           <root url="file://$MODULE_DIR$/vendor/sebastian/diff" />
@@ -206,10 +232,12 @@
           <root url="file://$MODULE_DIR$/vendor/symfony/config" />
           <root url="file://$MODULE_DIR$/vendor/symfony/console" />
           <root url="file://$MODULE_DIR$/vendor/symfony/debug" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/event-dispatcher" />
           <root url="file://$MODULE_DIR$/vendor/symfony/filesystem" />
           <root url="file://$MODULE_DIR$/vendor/symfony/finder" />
           <root url="file://$MODULE_DIR$/vendor/symfony/polyfill-mbstring" />
           <root url="file://$MODULE_DIR$/vendor/symfony/process" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/stopwatch" />
           <root url="file://$MODULE_DIR$/vendor/symfony/var-dumper" />
           <root url="file://$MODULE_DIR$/vendor/symfony/yaml" />
           <root url="file://$MODULE_DIR$/vendor/theseer/tokenizer" />
