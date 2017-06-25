@@ -91,5 +91,32 @@ class UsersFixture extends TestFixture
             'osm_current_term' => 1,
             'osm_term_end' => 1497823500
         ],
+        [
+            'id' => 2,
+            'username' => 'User2',
+            'last_login' => 1497823500,
+            'login_count' => 1,
+            'role_id' => 1,
+            'auth_role_id' => 1,
+            'section_id' => 1,
+            'first_name' => 'Lorem ipsum dolor sit amet',
+            'last_name' => 'Lorem ipsum dolor sit amet',
+            'email' => 'User2',
+            'password' => 'Lorem ipsum dolor sit amet',
+            'phone' => 'Lorem ipsu',
+            'address_1' => 'Lorem ipsum dolor sit amet',
+            'address_2' => 'Lorem ipsum dolor sit amet',
+            'city' => 'Lorem ipsum dolor sit amet',
+            'county' => 'Lorem ipsum dolor sit amet',
+            'postcode' => 'Lorem ',
+            'created' => 1497823500,
+            'modified' => 1497823500,
+            'osm_user_id' => 1,
+            'osm_secret' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
+            'osm_linked' => 1,
+            'osm_linkdate' => 1497823500,
+            'osm_current_term' => 1,
+            'osm_term_end' => 1497823500
+        ],
     ];
 }

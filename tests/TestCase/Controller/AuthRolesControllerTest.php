@@ -16,13 +16,13 @@ class AuthRolesControllerTest extends IntegrationTestCase
      * @var array
      */
     public $fixtures = [
-        'app.auth_roles',
         'app.users',
-        'app.districts',
         'app.roles',
-        'app.scout_groups',
-        'app.section_types',
+        'app.auth_roles',
         'app.sections',
+        'app.scout_groups',
+        'app.districts',
+        'app.section_types',
     ];
 
     /**
@@ -32,7 +32,9 @@ class AuthRolesControllerTest extends IntegrationTestCase
      */
     public function testIndex()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $this->get(['controller' => 'AuthRoles', 'action' => 'index']);
+
+        $this->assertResponseOk();
     }
 
     /**
@@ -42,7 +44,9 @@ class AuthRolesControllerTest extends IntegrationTestCase
      */
     public function testView()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $this->get('/auth-roles/view/1');
+
+        $this->assertResponseOk();
     }
 
     /**
@@ -52,7 +56,9 @@ class AuthRolesControllerTest extends IntegrationTestCase
      */
     public function testAdd()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $this->get('/auth-roles/add');
+
+        $this->assertResponseOk();
     }
 
     /**
@@ -62,7 +68,9 @@ class AuthRolesControllerTest extends IntegrationTestCase
      */
     public function testEdit()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $this->get('/auth-roles/edit/1');
+
+        $this->assertResponseOk();
     }
 
     /**
@@ -72,6 +80,11 @@ class AuthRolesControllerTest extends IntegrationTestCase
      */
     public function testDelete()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $this->enableCsrfToken();
+        $this->enableSecurityToken();
+
+        $this->delete('/auth-roles/delete/2');
+
+        $this->assertRedirect();
     }
 }

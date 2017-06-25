@@ -27,7 +27,9 @@ class DistrictsControllerTest extends IntegrationTestCase
      */
     public function testIndex()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $this->get(['controller' => 'Districts', 'action' => 'index']);
+
+        $this->assertResponseOk();
     }
 
     /**
@@ -37,7 +39,9 @@ class DistrictsControllerTest extends IntegrationTestCase
      */
     public function testView()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $this->get('/districts/view/1');
+
+        $this->assertResponseOk();
     }
 
     /**
@@ -47,7 +51,9 @@ class DistrictsControllerTest extends IntegrationTestCase
      */
     public function testAdd()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $this->get('/districts/add');
+
+        $this->assertResponseOk();
     }
 
     /**
@@ -57,7 +63,9 @@ class DistrictsControllerTest extends IntegrationTestCase
      */
     public function testEdit()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $this->get('/districts/edit/1');
+
+        $this->assertResponseOk();
     }
 
     /**
@@ -67,6 +75,11 @@ class DistrictsControllerTest extends IntegrationTestCase
      */
     public function testDelete()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $this->enableCsrfToken();
+        $this->enableSecurityToken();
+
+        $this->delete('/districts/delete/2');
+
+        $this->assertRedirect();
     }
 }

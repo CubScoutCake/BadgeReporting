@@ -43,5 +43,12 @@ class ScoutGroupsFixture extends TestFixture
             'created' => 1497823471,
             'modified' => 1497823471
         ],
+        [
+            'id' => 2,
+            'scout_group' => 'ScoutGroup2',
+            'district_id' => 1,
+            'created' => 1497823471,
+            'modified' => 1497823471
+        ],
     ];
 }

@@ -21,7 +21,7 @@ class UsersController extends AppController
     public function index()
     {
         $this->paginate = [
-            'contain' => ['Roles', 'AuthRoles', 'Sections', 'OsmUsers']
+            'contain' => ['Roles', 'AuthRoles', 'Sections']
         ];
         $users = $this->paginate($this->Users);
 
@@ -39,7 +39,7 @@ class UsersController extends AppController
     public function view($id = null)
     {
         $user = $this->Users->get($id, [
-            'contain' => ['Roles', 'AuthRoles', 'Sections', 'OsmUsers']
+            'contain' => ['Roles', 'AuthRoles', 'Sections']
         ]);
 
         $this->set('user', $user);
@@ -66,8 +66,7 @@ class UsersController extends AppController
         $roles = $this->Users->Roles->find('list', ['limit' => 200]);
         $authRoles = $this->Users->AuthRoles->find('list', ['limit' => 200]);
         $sections = $this->Users->Sections->find('list', ['limit' => 200]);
-        $osmUsers = $this->Users->OsmUsers->find('list', ['limit' => 200]);
-        $this->set(compact('user', 'roles', 'authRoles', 'sections', 'osmUsers'));
+        $this->set(compact('user', 'roles', 'authRoles', 'sections'));
         $this->set('_serialize', ['user']);
     }
 
@@ -95,8 +94,7 @@ class UsersController extends AppController
         $roles = $this->Users->Roles->find('list', ['limit' => 200]);
         $authRoles = $this->Users->AuthRoles->find('list', ['limit' => 200]);
         $sections = $this->Users->Sections->find('list', ['limit' => 200]);
-        $osmUsers = $this->Users->OsmUsers->find('list', ['limit' => 200]);
-        $this->set(compact('user', 'roles', 'authRoles', 'sections', 'osmUsers'));
+        $this->set(compact('user', 'roles', 'authRoles', 'sections'));
         $this->set('_serialize', ['user']);
     }
 

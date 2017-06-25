@@ -50,5 +50,13 @@ class SectionsFixture extends TestFixture
             'created' => 1497823488,
             'modified' => 1497823488
         ],
+        [
+            'id' => 2,
+            'section' => 'Secton2',
+            'scout_group_id' => 1,
+            'section_type_id' => 1,
+            'created' => 1497823488,
+            'modified' => 1497823488
+        ],
     ];
 }

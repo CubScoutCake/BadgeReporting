@@ -35,7 +35,7 @@ class AuthRolesTable extends Table
         parent::initialize($config);
 
         $this->setTable('auth_roles');
-        $this->setDisplayField('id');
+        $this->setDisplayField('auth_role');
         $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');

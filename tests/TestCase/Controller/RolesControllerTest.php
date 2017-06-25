@@ -16,8 +16,13 @@ class RolesControllerTest extends IntegrationTestCase
      * @var array
      */
     public $fixtures = [
+        'app.users',
         'app.roles',
-        'app.users'
+        'app.auth_roles',
+        'app.sections',
+        'app.scout_groups',
+        'app.districts',
+        'app.section_types',
     ];
 
     /**
@@ -27,7 +32,9 @@ class RolesControllerTest extends IntegrationTestCase
      */
     public function testIndex()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $this->get(['controller' => 'Roles', 'action' => 'index']);
+
+        $this->assertResponseOk();
     }
 
     /**
@@ -37,7 +44,9 @@ class RolesControllerTest extends IntegrationTestCase
      */
     public function testView()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $this->get('/roles/view/1');
+
+        $this->assertResponseOk();
     }
 
     /**
@@ -47,7 +56,9 @@ class RolesControllerTest extends IntegrationTestCase
      */
     public function testAdd()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $this->get('/roles/add');
+
+        $this->assertResponseOk();
     }
 
     /**
@@ -57,7 +68,9 @@ class RolesControllerTest extends IntegrationTestCase
      */
     public function testEdit()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $this->get('/roles/edit/1');
+
+        $this->assertResponseOk();
     }
 
     /**
@@ -67,6 +80,11 @@ class RolesControllerTest extends IntegrationTestCase
      */
     public function testDelete()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $this->enableCsrfToken();
+        $this->enableSecurityToken();
+
+        $this->delete('/roles/delete/2');
+
+        $this->assertRedirect();
     }
 }

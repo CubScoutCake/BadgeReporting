@@ -35,7 +35,6 @@ use Cake\ORM\Entity;
  * @property \App\Model\Entity\Role $role
  * @property \App\Model\Entity\AuthRole $auth_role
  * @property \App\Model\Entity\Section $section
- * @property \App\Model\Entity\OsmUser $osm_user
  */
 class User extends Entity
 {

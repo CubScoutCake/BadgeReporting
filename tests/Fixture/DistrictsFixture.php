@@ -40,5 +40,11 @@ class DistrictsFixture extends TestFixture
             'created' => 1497823222,
             'modified' => 1497823222
         ],
+        [
+            'id' => 2,
+            'district' => 'District2',
+            'created' => 1497823222,
+            'modified' => 1497823222
+        ],
     ];
 }

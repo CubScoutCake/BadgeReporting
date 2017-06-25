@@ -40,5 +40,11 @@ class RolesFixture extends TestFixture
             'created' => 1497823232,
             'modified' => 1497823232
         ],
+        [
+            'id' => 2,
+            'role' => 'Role2',
+            'created' => 1497823232,
+            'modified' => 1497823232
+        ],
     ];
 }

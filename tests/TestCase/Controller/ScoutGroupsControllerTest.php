@@ -16,9 +16,13 @@ class ScoutGroupsControllerTest extends IntegrationTestCase
      * @var array
      */
     public $fixtures = [
+        'app.users',
+        'app.roles',
+        'app.auth_roles',
+        'app.sections',
         'app.scout_groups',
         'app.districts',
-        'app.sections'
+        'app.section_types',
     ];
 
     /**
@@ -28,7 +32,9 @@ class ScoutGroupsControllerTest extends IntegrationTestCase
      */
     public function testIndex()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $this->get(['controller' => 'ScoutGroups', 'action' => 'index']);
+
+        $this->assertResponseOk();
     }
 
     /**
@@ -38,7 +44,9 @@ class ScoutGroupsControllerTest extends IntegrationTestCase
      */
     public function testView()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $this->get('/scout-groups/view/1');
+
+        $this->assertResponseOk();
     }
 
     /**
@@ -48,7 +56,9 @@ class ScoutGroupsControllerTest extends IntegrationTestCase
      */
     public function testAdd()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $this->get('/scout-groups/add');
+
+        $this->assertResponseOk();
     }
 
     /**
@@ -58,7 +68,9 @@ class ScoutGroupsControllerTest extends IntegrationTestCase
      */
     public function testEdit()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $this->get('/scout-groups/edit/1');
+
+        $this->assertResponseOk();
     }
 
     /**
@@ -68,6 +80,11 @@ class ScoutGroupsControllerTest extends IntegrationTestCase
      */
     public function testDelete()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $this->enableCsrfToken();
+        $this->enableSecurityToken();
+
+        $this->delete('/scout-groups/delete/2');
+
+        $this->assertRedirect();
     }
 }

@@ -12,7 +12,6 @@ use Cake\Validation\Validator;
  * @property \App\Model\Table\RolesTable|\Cake\ORM\Association\BelongsTo $Roles
  * @property \App\Model\Table\AuthRolesTable|\Cake\ORM\Association\BelongsTo $AuthRoles
  * @property \App\Model\Table\SectionsTable|\Cake\ORM\Association\BelongsTo $Sections
- * @property \App\Model\Table\OsmUsersTable|\Cake\ORM\Association\BelongsTo $OsmUsers
  *
  * @method \App\Model\Entity\User get($primaryKey, $options = [])
  * @method \App\Model\Entity\User newEntity($data = null, array $options = [])
@@ -54,9 +53,6 @@ class UsersTable extends Table
         $this->belongsTo('Sections', [
             'foreignKey' => 'section_id',
             'joinType' => 'INNER'
-        ]);
-        $this->belongsTo('OsmUsers', [
-            'foreignKey' => 'osm_user_id'
         ]);
     }
 
@@ -130,6 +126,10 @@ class UsersTable extends Table
             ->allowEmpty('osm_secret');
 
         $validator
+            ->integer('osm_user_id')
+            ->allowEmpty('osm_user_id');
+
+        $validator
             ->integer('osm_linked')
             ->allowEmpty('osm_linked');
 
@@ -162,7 +162,6 @@ class UsersTable extends Table
         $rules->add($rules->existsIn(['role_id'], 'Roles'));
         $rules->add($rules->existsIn(['auth_role_id'], 'AuthRoles'));
         $rules->add($rules->existsIn(['section_id'], 'Sections'));
-        $rules->add($rules->existsIn(['osm_user_id'], 'OsmUsers'));
 
         return $rules;
     }

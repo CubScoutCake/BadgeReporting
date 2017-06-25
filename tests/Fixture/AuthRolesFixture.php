@@ -35,7 +35,13 @@ class AuthRolesFixture extends TestFixture
     public $records = [
         [
             'id' => 1,
-            'auth_role' => 'Lorem ipsum dolor sit amet',
+            'auth_role' => 'User',
+            'created' => 1497823146,
+            'modified' => 1497823146
+        ],
+        [
+            'id' => 2,
+            'auth_role' => 'Admin',
             'created' => 1497823146,
             'modified' => 1497823146
         ],

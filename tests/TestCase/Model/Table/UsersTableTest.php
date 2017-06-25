@@ -31,7 +31,6 @@ class UsersTableTest extends TestCase
         'app.scout_groups',
         'app.districts',
         'app.section_types',
-        'app.osm_users'
     ];
 
     /**
