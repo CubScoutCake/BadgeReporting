@@ -20,6 +20,11 @@ class Users extends AbstractMigration
                 'null' => false,
             ])
             ->addTimestamps('created','modified')
+            ->addColumn('deleted', 'datetime', [
+                'default' => null,
+                'length' => null,
+                'null' => true,
+            ])
             ->create();
 
         $table = $this->table('section_types');
@@ -31,6 +36,11 @@ class Users extends AbstractMigration
             ])
             ->addIndex(['section_type'], ['unique' => true])
             ->addTimestamps('created', 'modified')
+            ->addColumn('deleted', 'datetime', [
+                'default' => null,
+                'length' => null,
+                'null' => true,
+            ])
             ->create();
 
 
@@ -41,7 +51,17 @@ class Users extends AbstractMigration
                 'limit' => 255,
                 'null' => false,
             ])
+            ->addColumn('short_district','string', [
+                'default' => null,
+                'limit' => 255,
+                'null' => false,
+            ])
             ->addTimestamps('created', 'modified')
+            ->addColumn('deleted', 'datetime', [
+                'default' => null,
+                'length' => null,
+                'null' => true,
+            ])
             ->addIndex(['district'], ['unique' => true])
             ->create();
 
@@ -54,10 +74,20 @@ class Users extends AbstractMigration
             ])
             ->addColumn('district_id', 'integer', [
                 'default' => null,
-                'limit' => 255,
+                'limit' => 11,
                 'null' => false,
             ])
+            ->addColumn('number_stripped', 'integer', [
+                'default' => null,
+                'limit' => 11,
+                'null' => true,
+            ])
             ->addTimestamps('created', 'modified')
+            ->addColumn('deleted', 'datetime', [
+                'default' => null,
+                'length' => null,
+                'null' => true,
+            ])
             ->addForeignKey(
                 'district_id',
                 'districts',
@@ -88,6 +118,11 @@ class Users extends AbstractMigration
                 'null' => false,
             ])
             ->addTimestamps('created', 'modified')
+            ->addColumn('deleted', 'datetime', [
+                'default' => null,
+                'length' => null,
+                'null' => true,
+            ])
             ->addForeignKey(
                 'scout_group_id',
                 'scout_groups',
@@ -119,6 +154,11 @@ class Users extends AbstractMigration
                 'null' => false,
             ])
             ->addTimestamps('created', 'modified')
+            ->addColumn('deleted', 'datetime', [
+                'default' => null,
+                'length' => null,
+                'null' => true,
+            ])
             ->addIndex(['role'], ['unique' => true])
             ->create();
 
@@ -205,6 +245,11 @@ class Users extends AbstractMigration
                 'null' => false,
             ])
             ->addTimestamps('created','modified')
+            ->addColumn('deleted', 'datetime', [
+                'default' => null,
+                'length' => null,
+                'null' => true,
+            ])
             ->addColumn('osm_user_id', 'integer', [
                 'default' => null,
                 'limit' => 11,
