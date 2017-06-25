@@ -2,6 +2,7 @@
 namespace App\Test\TestCase\Controller;
 
 use App\Controller\AuthRolesController;
+use Cake\ORM\TableRegistry;
 use Cake\TestSuite\IntegrationTestCase;
 
 /**
@@ -59,6 +60,21 @@ class AuthRolesControllerTest extends IntegrationTestCase
         $this->get('/auth-roles/add');
 
         $this->assertResponseOk();
+
+        $this->enableCsrfToken();
+        $this->enableSecurityToken();
+
+        $data = [
+            'auth_role' => 'New Auth'
+        ];
+
+        $this->post('/auth-roles/add', $data);
+
+        $this->assertResponseSuccess();
+
+        $auth_role = TableRegistry::get('AuthRoles');
+        $query = $auth_role->find()->where(['auth_role' => $data['auth_role']]);
+        $this->assertEquals(1, $query->count());
     }
 
     /**
@@ -71,6 +87,21 @@ class AuthRolesControllerTest extends IntegrationTestCase
         $this->get('/auth-roles/edit/1');
 
         $this->assertResponseOk();
+
+        $this->enableCsrfToken();
+        $this->enableSecurityToken();
+
+        $data = [
+            'auth_role' => 'Changed Auth'
+        ];
+
+        $this->post('/auth-roles/edit/1', $data);
+
+        $this->assertResponseSuccess();
+
+        $auth_role = TableRegistry::get('AuthRoles');
+        $query = $auth_role->find()->where(['auth_role' => $data['auth_role']]);
+        $this->assertEquals(1, $query->count());
     }
 
     /**

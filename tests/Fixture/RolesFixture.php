@@ -36,14 +36,12 @@ class RolesFixture extends TestFixture
      */
     public $records = [
         [
-            'id' => 1,
             'role' => 'Lorem ipsum dolor sit amet',
             'created' => 1497823232,
             'modified' => 1497823232,
             'deleted' => null,
         ],
         [
-            'id' => 2,
             'role' => 'Role2',
             'created' => 1497823232,
             'modified' => 1497823232,

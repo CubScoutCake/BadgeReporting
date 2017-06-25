@@ -10,6 +10,7 @@ use Cake\ORM\Entity;
  * @property string $auth_role
  * @property \Cake\I18n\FrozenTime $created
  * @property \Cake\I18n\FrozenTime $modified
+ * @property \Cake\I18n\FrozenTime $deleted
  *
  * @property \App\Model\Entity\User[] $users
  */

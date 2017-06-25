@@ -2,6 +2,7 @@
 namespace App\Test\TestCase\Controller;
 
 use App\Controller\UsersController;
+use Cake\ORM\TableRegistry;
 use Cake\TestSuite\IntegrationTestCase;
 
 /**
@@ -59,6 +60,34 @@ class UsersControllerTest extends IntegrationTestCase
         $this->get('/users/add');
 
         $this->assertResponseOk();
+
+        $this->enableCsrfToken();
+        $this->enableSecurityToken();
+
+        $data = [
+            'username' => 'NewUserName',
+            'role_id' => 1,
+            'auth_role_id' => 1,
+            'section_id' => 1,
+            'first_name' => 'PersonName',
+            'last_name' => 'FamilyName',
+            'email' => 'fish@llama.com',
+            'password' => 'Lorem ipsum dolor sit amet',
+            'phone' => 'Lorem ipsu',
+            'address_1' => 'Lorem ipsum dolor sit amet',
+            'address_2' => 'Lorem ipsum dolor sit amet',
+            'city' => 'Lorem ipsum dolor sit amet',
+            'county' => 'Lorem ipsum dolor sit amet',
+            'postcode' => 'Lorem ',
+        ];
+
+        $this->post('/users/add', $data);
+
+        $this->assertResponseSuccess();
+
+        $auth_role = TableRegistry::get('Users');
+        $query = $auth_role->find()->where(['username' => $data['username']]);
+        $this->assertEquals(1, $query->count());
     }
 
     /**
@@ -71,6 +100,21 @@ class UsersControllerTest extends IntegrationTestCase
         $this->get('/users/edit/1');
 
         $this->assertResponseOk();
+
+        $this->enableCsrfToken();
+        $this->enableSecurityToken();
+
+        $data = [
+            'username' => 'Changed UserName',
+        ];
+
+        $this->post('/users/edit/1', $data);
+
+        $this->assertResponseSuccess();
+
+        $auth_role = TableRegistry::get('Users');
+        $query = $auth_role->find()->where(['username' => $data['username']]);
+        $this->assertEquals(1, $query->count());
     }
 
     /**

@@ -2,6 +2,7 @@
 namespace App\Test\TestCase\Controller;
 
 use App\Controller\SectionTypesController;
+use Cake\ORM\TableRegistry;
 use Cake\TestSuite\IntegrationTestCase;
 
 /**
@@ -56,6 +57,21 @@ class SectionTypesControllerTest extends IntegrationTestCase
         $this->get('/section-types/add');
 
         $this->assertResponseOk();
+
+        $this->enableCsrfToken();
+        $this->enableSecurityToken();
+
+        $data = [
+            'section_type' => 'New Section Type',
+        ];
+
+        $this->post('/section-types/add', $data);
+
+        $this->assertResponseSuccess();
+
+        $auth_role = TableRegistry::get('SectionTypes');
+        $query = $auth_role->find()->where(['section_type' => $data['section_type']]);
+        $this->assertEquals(1, $query->count());
     }
 
     /**
@@ -68,6 +84,21 @@ class SectionTypesControllerTest extends IntegrationTestCase
         $this->get('/section-types/edit/1');
 
         $this->assertResponseOk();
+
+        $this->enableCsrfToken();
+        $this->enableSecurityToken();
+
+        $data = [
+            'section_type' => 'Changed Section Type',
+        ];
+
+        $this->post('/section-types/edit/1', $data);
+
+        $this->assertResponseSuccess();
+
+        $auth_role = TableRegistry::get('SectionTypes');
+        $query = $auth_role->find()->where(['section_type' => $data['section_type']]);
+        $this->assertEquals(1, $query->count());
     }
 
     /**

@@ -24,6 +24,7 @@ class AuthRolesFixture extends TestFixture
         'deleted' => ['type' => 'timestamp', 'length' => null, 'default' => null, 'null' => true, 'comment' => null, 'precision' => null],
         '_constraints' => [
             'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
+            'auth_roles_auth_role' => ['type' => 'unique', 'columns' => ['auth_role'], 'length' => []],
         ],
     ];
     // @codingStandardsIgnoreEnd
@@ -35,14 +36,12 @@ class AuthRolesFixture extends TestFixture
      */
     public $records = [
         [
-            'id' => 1,
             'auth_role' => 'User',
             'created' => 1497823146,
             'modified' => 1497823146,
             'deleted' => null,
         ],
         [
-            'id' => 2,
             'auth_role' => 'Admin',
             'created' => 1497823146,
             'modified' => 1497823146,

@@ -2,6 +2,7 @@
 namespace App\Test\TestCase\Controller;
 
 use App\Controller\SectionsController;
+use Cake\ORM\TableRegistry;
 use Cake\TestSuite\IntegrationTestCase;
 
 /**
@@ -59,6 +60,23 @@ class SectionsControllerTest extends IntegrationTestCase
         $this->get('/sections/add');
 
         $this->assertResponseOk();
+
+        $this->enableCsrfToken();
+        $this->enableSecurityToken();
+
+        $data = [
+            'section' => 'New Section',
+            'scout_group_id' => 1,
+            'section_type_id' => 1,
+        ];
+
+        $this->post('/sections/add', $data);
+
+        $this->assertResponseSuccess();
+
+        $auth_role = TableRegistry::get('Sections');
+        $query = $auth_role->find()->where(['section' => $data['section']]);
+        $this->assertEquals(1, $query->count());
     }
 
     /**
@@ -71,6 +89,23 @@ class SectionsControllerTest extends IntegrationTestCase
         $this->get('/sections/edit/1');
 
         $this->assertResponseOk();
+
+        $this->enableCsrfToken();
+        $this->enableSecurityToken();
+
+        $data = [
+            'section' => 'Changed Section',
+            'scout_group_id' => 1,
+            'section_type_id' => 1,
+        ];
+
+        $this->post('/sections/edit/1', $data);
+
+        $this->assertResponseSuccess();
+
+        $auth_role = TableRegistry::get('Sections');
+        $query = $auth_role->find()->where(['section' => $data['section']]);
+        $this->assertEquals(1, $query->count());
     }
 
     /**

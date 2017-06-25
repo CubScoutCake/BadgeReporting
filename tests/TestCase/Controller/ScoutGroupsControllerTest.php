@@ -2,6 +2,7 @@
 namespace App\Test\TestCase\Controller;
 
 use App\Controller\ScoutGroupsController;
+use Cake\ORM\TableRegistry;
 use Cake\TestSuite\IntegrationTestCase;
 
 /**
@@ -59,6 +60,23 @@ class ScoutGroupsControllerTest extends IntegrationTestCase
         $this->get('/scout-groups/add');
 
         $this->assertResponseOk();
+
+        $this->enableCsrfToken();
+        $this->enableSecurityToken();
+
+        $data = [
+            'scout_group' => 'New Group',
+            'district_id' => 1,
+            'number_stripped' => 6,
+        ];
+
+        $this->post('/scout-groups/add', $data);
+
+        $this->assertResponseSuccess();
+
+        $auth_role = TableRegistry::get('ScoutGroups');
+        $query = $auth_role->find()->where(['scout_group' => $data['scout_group']]);
+        $this->assertEquals(1, $query->count());
     }
 
     /**
@@ -71,6 +89,23 @@ class ScoutGroupsControllerTest extends IntegrationTestCase
         $this->get('/scout-groups/edit/1');
 
         $this->assertResponseOk();
+
+        $this->enableCsrfToken();
+        $this->enableSecurityToken();
+
+        $data = [
+            'scout_group' => 'Changed Group',
+            'district_id' => 1,
+            'number_stripped' => 8,
+        ];
+
+        $this->post('/scout-groups/edit/1', $data);
+
+        $this->assertResponseSuccess();
+
+        $auth_role = TableRegistry::get('ScoutGroups');
+        $query = $auth_role->find()->where(['scout_group' => $data['scout_group']]);
+        $this->assertEquals(1, $query->count());
     }
 
     /**

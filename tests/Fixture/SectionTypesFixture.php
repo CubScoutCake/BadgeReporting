@@ -36,14 +36,12 @@ class SectionTypesFixture extends TestFixture
      */
     public $records = [
         [
-            'id' => 1,
             'section_type' => 'Lorem ipsum dolor sit amet',
             'created' => 1497823483,
             'modified' => 1497823483,
             'deleted' => null,
         ],
         [
-            'id' => 2,
             'section_type' => 'Type2',
             'created' => 1497823483,
             'modified' => 1497823483,

@@ -2,6 +2,7 @@
 namespace App\Test\TestCase\Controller;
 
 use App\Controller\DistrictsController;
+use Cake\ORM\TableRegistry;
 use Cake\TestSuite\IntegrationTestCase;
 
 /**
@@ -54,6 +55,21 @@ class DistrictsControllerTest extends IntegrationTestCase
         $this->get('/districts/add');
 
         $this->assertResponseOk();
+
+        $this->enableCsrfToken();
+        $this->enableSecurityToken();
+
+        $data = [
+            'district' => 'New District',
+            'short_district' => 'New',
+        ];
+
+        $this->post('/districts/add/', $data);
+
+        $this->assertResponseSuccess();
+        $articles = TableRegistry::get('Districts');
+        $query = $articles->find()->where(['district' => $data['district']]);
+        $this->assertEquals(1, $query->count());
     }
 
     /**
@@ -66,6 +82,21 @@ class DistrictsControllerTest extends IntegrationTestCase
         $this->get('/districts/edit/1');
 
         $this->assertResponseOk();
+
+        $this->enableCsrfToken();
+        $this->enableSecurityToken();
+
+        $data = [
+            'district' => 'Changed District',
+            'short_district' => 'Changed',
+        ];
+
+        $this->post('/districts/edit/1', $data);
+
+        $this->assertResponseSuccess();
+        $articles = TableRegistry::get('Districts');
+        $query = $articles->find()->where(['district' => $data['district']]);
+        $this->assertEquals(1, $query->count());
     }
 
     /**

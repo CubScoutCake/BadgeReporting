@@ -66,7 +66,6 @@ class UsersFixture extends TestFixture
      */
     public $records = [
         [
-            'id' => 1,
             'username' => 'Lorem ipsum dolor sit amet',
             'last_login' => 1497823500,
             'login_count' => 1,
@@ -94,7 +93,6 @@ class UsersFixture extends TestFixture
             'osm_term_end' => 1497823500,
         ],
         [
-            'id' => 2,
             'username' => 'User2',
             'last_login' => 1497823500,
             'login_count' => 1,

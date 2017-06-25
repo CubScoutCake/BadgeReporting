@@ -74,6 +74,7 @@ class DistrictsTableTest extends TestCase
             [
                 'id' => 1,
                 'district' => 'Lorem ipsum dolor sit amet',
+                'short_district' => 'Lorem',
                 'created' => $frozen,
                 'modified' => $frozen,
                 'deleted' => null,
@@ -81,6 +82,7 @@ class DistrictsTableTest extends TestCase
             [
                 'id' => 2,
                 'district' => 'District2',
+                'short_district' => 'd2',
                 'created' => $frozen,
                 'modified' => $frozen,
                 'deleted' => null,
@@ -107,12 +109,14 @@ class DistrictsTableTest extends TestCase
         $goodData = [
             'id' => 4,
             'district' => 'Lorem fish dolor sit amet',
+            'short_district' => 'fish',
         ];
 
         $expected = [
             [
                 'id' => 1,
                 'district' => 'Lorem ipsum dolor sit amet',
+                'short_district' => 'Lorem',
                 'created' => $frozen,
                 'modified' => $frozen,
                 'deleted' => null,
@@ -120,6 +124,7 @@ class DistrictsTableTest extends TestCase
             [
                 'id' => 2,
                 'district' => 'District2',
+                'short_district' => 'd2',
                 'created' => $frozen,
                 'modified' => $frozen,
                 'deleted' => null,
@@ -127,6 +132,7 @@ class DistrictsTableTest extends TestCase
             [
                 'id' => 4,
                 'district' => 'Lorem fish dolor sit amet',
+                'short_district' => 'fish',
                 'created' => $frozen,
                 'modified' => $frozen,
                 'deleted' => null,
@@ -158,18 +164,21 @@ class DistrictsTableTest extends TestCase
 
         $duplicateData = [
             'district' => 'District2',
+            'short_district' => 'fish',
             'id' => 3,
         ];
 
         $goodData = [
             'id' => 4,
             'district' => 'Lorem fish dolor sit amet',
+            'short_district' => 'fish',
         ];
 
         $expected = [
             [
                 'id' => 1,
                 'district' => 'Lorem ipsum dolor sit amet',
+                'short_district' => 'Lorem',
                 'created' => $frozen,
                 'modified' => $frozen,
                 'deleted' => null,
@@ -177,6 +186,7 @@ class DistrictsTableTest extends TestCase
             [
                 'id' => 2,
                 'district' => 'District2',
+                'short_district' => 'd2',
                 'created' => $frozen,
                 'modified' => $frozen,
                 'deleted' => null,
@@ -184,6 +194,7 @@ class DistrictsTableTest extends TestCase
             [
                 'id' => 4,
                 'district' => 'Lorem fish dolor sit amet',
+                'short_district' => 'fish',
                 'created' => $frozen,
                 'modified' => $frozen,
                 'deleted' => null,
@@ -216,18 +227,21 @@ class DistrictsTableTest extends TestCase
         $deletedData = [
             'id' => 3,
             'district' => 'Lorem goat dolor sit amet',
+            'short_district' => 'moo',
             'deleted' => $frozen
         ];
 
         $goodData = [
             'id' => 4,
             'district' => 'Lorem fish dolor sit amet',
+            'short_district' => 'fish',
         ];
 
         $expected = [
             [
                 'id' => 1,
                 'district' => 'Lorem ipsum dolor sit amet',
+                'short_district' => 'Lorem',
                 'created' => $frozen,
                 'modified' => $frozen,
                 'deleted' => null,
@@ -235,6 +249,7 @@ class DistrictsTableTest extends TestCase
             [
                 'id' => 2,
                 'district' => 'District2',
+                'short_district' => 'd2',
                 'created' => $frozen,
                 'modified' => $frozen,
                 'deleted' => null,
@@ -242,6 +257,7 @@ class DistrictsTableTest extends TestCase
             [
                 'id' => 4,
                 'district' => 'Lorem fish dolor sit amet',
+                'short_district' => 'fish',
                 'created' => $frozen,
                 'modified' => $frozen,
                 'deleted' => null,

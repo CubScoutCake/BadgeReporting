@@ -69,7 +69,8 @@ class AuthRolesTable extends Table
 
         $validator
             ->requirePresence('auth_role', 'create')
-            ->notEmpty('auth_role');
+            ->notEmpty('auth_role')
+            ->add('auth_role', 'unique', ['rule' => 'validateUnique', 'provider' => 'table']);
 
         return $validator;
     }

@@ -44,7 +44,6 @@ class SectionsFixture extends TestFixture
      */
     public $records = [
         [
-            'id' => 1,
             'section' => 'Lorem ipsum dolor sit amet',
             'scout_group_id' => 1,
             'section_type_id' => 1,
@@ -53,7 +52,6 @@ class SectionsFixture extends TestFixture
             'deleted' => null,
         ],
         [
-            'id' => 2,
             'section' => 'Secton2',
             'scout_group_id' => 1,
             'section_type_id' => 1,
