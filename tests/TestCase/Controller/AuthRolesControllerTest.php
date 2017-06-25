@@ -120,7 +120,6 @@ class AuthRolesControllerTest extends IntegrationTestCase
         $this->post('/auth-roles/edit/1', $data);
 
         $this->assertResponseOk();
-
     }
 
     /**
