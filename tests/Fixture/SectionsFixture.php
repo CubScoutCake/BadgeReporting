@@ -23,6 +23,7 @@ class SectionsFixture extends TestFixture
         'section_type_id' => ['type' => 'integer', 'length' => 10, 'default' => null, 'null' => false, 'comment' => null, 'precision' => null, 'unsigned' => null, 'autoIncrement' => null],
         'created' => ['type' => 'timestamp', 'length' => null, 'default' => 'now()', 'null' => false, 'comment' => null, 'precision' => null],
         'modified' => ['type' => 'timestamp', 'length' => null, 'default' => null, 'null' => true, 'comment' => null, 'precision' => null],
+        'deleted' => ['type' => 'timestamp', 'length' => null, 'default' => null, 'null' => true, 'comment' => null, 'precision' => null],
         '_indexes' => [
             'sections_scout_group_id' => ['type' => 'index', 'columns' => ['scout_group_id'], 'length' => []],
             'sections_section_type_id' => ['type' => 'index', 'columns' => ['section_type_id'], 'length' => []],
@@ -48,7 +49,8 @@ class SectionsFixture extends TestFixture
             'scout_group_id' => 1,
             'section_type_id' => 1,
             'created' => 1497823488,
-            'modified' => 1497823488
+            'modified' => 1497823488,
+            'deleted' => null,
         ],
         [
             'id' => 2,
@@ -56,7 +58,8 @@ class SectionsFixture extends TestFixture
             'scout_group_id' => 1,
             'section_type_id' => 1,
             'created' => 1497823488,
-            'modified' => 1497823488
+            'modified' => 1497823488,
+            'deleted' => null,
         ],
     ];
 }

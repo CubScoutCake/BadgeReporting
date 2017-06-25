@@ -1,13 +1,13 @@
 <?php
 namespace App\Test\TestCase\Shell;
 
-use App\Shell\DatabaseShell;
+use App\Shell\ConsoleShell;
 use Cake\TestSuite\TestCase;
 
 /**
- * App\Shell\DatabaseShell Test Case
+ * App\Shell\ConsoleShell Test Case
  */
-class DatabaseShellTest extends TestCase
+class ConsoleShellTest extends TestCase
 {
 
     /**
@@ -20,9 +20,9 @@ class DatabaseShellTest extends TestCase
     /**
      * Test subject
      *
-     * @var \App\Shell\DatabaseShell
+     * @var \App\Shell\ConsoleShell
      */
-    public $DatabaseShell;
+    public $ConsoleShell;
 
     /**
      * setUp method
@@ -33,7 +33,7 @@ class DatabaseShellTest extends TestCase
     {
         parent::setUp();
         $this->io = $this->getMockBuilder('Cake\Console\ConsoleIo')->getMock();
-        $this->DatabaseShell = new DatabaseShell($this->io);
+        $this->ConsoleShell = new ConsoleShell($this->io);
     }
 
     /**
@@ -43,37 +43,27 @@ class DatabaseShellTest extends TestCase
      */
     public function tearDown()
     {
-        unset($this->DatabaseShell);
+        unset($this->ConsoleShell);
 
         parent::tearDown();
     }
 
     /**
-     * Test build method
+     * Test main method
      *
      * @return void
      */
-    public function testBuild()
+    public function testMain()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }
 
     /**
-     * Test seed method
+     * Test getOptionParser method
      *
      * @return void
      */
-    public function testSeed()
-    {
-        $this->markTestIncomplete('Not implemented yet.');
-    }
-
-    /**
-     * Test password method
-     *
-     * @return void
-     */
-    public function testPassword()
+    public function testGetOptionParser()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }

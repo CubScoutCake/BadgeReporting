@@ -38,7 +38,17 @@ class AuthRolesTable extends Table
         $this->setDisplayField('auth_role');
         $this->setPrimaryKey('id');
 
-        $this->addBehavior('Timestamp');
+        $this->addBehavior('Timestamp', [
+            'events' => [
+                'Model.beforeSave' => [
+                    'created' => 'new',
+                    'modified' => 'always',
+                ]
+            ]
+        ]);
+        $this->addBehavior('Muffin/Trash.Trash', [
+            'field' => 'deleted'
+        ]);
 
         $this->hasMany('Users', [
             'foreignKey' => 'auth_role_id'
@@ -62,5 +72,19 @@ class AuthRolesTable extends Table
             ->notEmpty('auth_role');
 
         return $validator;
+    }
+
+    /**
+     * Returns a rules checker object that will be used for validating
+     * application integrity.
+     *
+     * @param \Cake\ORM\RulesChecker $rules The rules object to be modified.
+     * @return \Cake\ORM\RulesChecker
+     */
+    public function buildRules(RulesChecker $rules)
+    {
+        $rules->add($rules->isUnique(['auth_role']));
+
+        return $rules;
     }
 }
