@@ -55,7 +55,11 @@ class ConsoleShellTest extends TestCase
      */
     public function testMain()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $expected = 5;
+        $actual = $this->ConsoleShell->main();
+
+
+        $this->assertEquals($expected, $actual);
     }
 
     /**

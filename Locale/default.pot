@@ -1,0 +1,1484 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2017-06-29 22:18+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/AuthRolesController.php:57;82
+msgid "The auth role has been saved."
+msgstr ""
+
+#: Controller/AuthRolesController.php:61;86
+msgid "The auth role could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/AuthRolesController.php:104
+msgid "The auth role has been deleted."
+msgstr ""
+
+#: Controller/AuthRolesController.php:106
+msgid "The auth role could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/DistrictsController.php:57;82
+msgid "The district has been saved."
+msgstr ""
+
+#: Controller/DistrictsController.php:61;86
+msgid "The district could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/DistrictsController.php:104
+msgid "The district has been deleted."
+msgstr ""
+
+#: Controller/DistrictsController.php:106
+msgid "The district could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/RolesController.php:57;82
+msgid "The role has been saved."
+msgstr ""
+
+#: Controller/RolesController.php:61;86
+msgid "The role could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/RolesController.php:104
+msgid "The role has been deleted."
+msgstr ""
+
+#: Controller/RolesController.php:106
+msgid "The role could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/ScoutGroupsController.php:60;86
+msgid "The scout group has been saved."
+msgstr ""
+
+#: Controller/ScoutGroupsController.php:64;90
+msgid "The scout group could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/ScoutGroupsController.php:109
+msgid "The scout group has been deleted."
+msgstr ""
+
+#: Controller/ScoutGroupsController.php:111
+msgid "The scout group could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/SectionTypesController.php:57;82
+msgid "The section type has been saved."
+msgstr ""
+
+#: Controller/SectionTypesController.php:61;86
+msgid "The section type could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/SectionTypesController.php:104
+msgid "The section type has been deleted."
+msgstr ""
+
+#: Controller/SectionTypesController.php:106
+msgid "The section type could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/SectionsController.php:60;87
+msgid "The section has been saved."
+msgstr ""
+
+#: Controller/SectionsController.php:64;91
+msgid "The section could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/SectionsController.php:111
+msgid "The section has been deleted."
+msgstr ""
+
+#: Controller/SectionsController.php:113
+msgid "The section could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:60;88
+msgid "The user has been saved."
+msgstr ""
+
+#: Controller/UsersController.php:64;92
+msgid "The user could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:113
+msgid "The user has been deleted."
+msgstr ""
+
+#: Controller/UsersController.php:115
+msgid "The user could not be deleted. Please, try again."
+msgstr ""
+
+#: Template/AuthRoles/add.ctp:8
+#: Template/AuthRoles/edit.ctp:8
+#: Template/AuthRoles/index.ctp:9;24
+#: Template/AuthRoles/view.ctp:9;68
+#: Template/Districts/add.ctp:8
+#: Template/Districts/edit.ctp:8
+#: Template/Districts/index.ctp:9;24
+#: Template/Districts/view.ctp:9;48
+#: Template/Roles/add.ctp:8
+#: Template/Roles/edit.ctp:8
+#: Template/Roles/index.ctp:9;24
+#: Template/Roles/view.ctp:9;68
+#: Template/ScoutGroups/add.ctp:8
+#: Template/ScoutGroups/edit.ctp:8
+#: Template/ScoutGroups/index.ctp:9;27
+#: Template/ScoutGroups/view.ctp:9;55
+#: Template/SectionTypes/add.ctp:8
+#: Template/SectionTypes/edit.ctp:8
+#: Template/SectionTypes/index.ctp:9;24
+#: Template/SectionTypes/view.ctp:9;49
+#: Template/Sections/add.ctp:8
+#: Template/Sections/edit.ctp:8
+#: Template/Sections/index.ctp:9;30
+#: Template/Sections/view.ctp:9;80
+#: Template/Users/add.ctp:8
+#: Template/Users/edit.ctp:8
+#: Template/Users/index.ctp:9;48
+#: Template/Users/view.ctp:9
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/bake/src/Template/Bake/Element/form.ctp:30
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/bake/src/Template/Bake/Template/index.ctp:43;69
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/bake/src/Template/Bake/Template/view.ctp:64;160
+msgid "Actions"
+msgstr ""
+
+#: Template/AuthRoles/add.ctp:9
+#: Template/AuthRoles/edit.ctp:15
+#: Template/AuthRoles/view.ctp:12
+#: Template/Users/add.ctp:12
+#: Template/Users/edit.ctp:18
+#: Template/Users/index.ctp:13
+#: Template/Users/view.ctp:16
+msgid "List Auth Roles"
+msgstr ""
+
+#: Template/AuthRoles/add.ctp:10
+#: Template/AuthRoles/edit.ctp:16
+#: Template/AuthRoles/index.ctp:11
+#: Template/AuthRoles/view.ctp:14
+#: Template/Roles/add.ctp:10
+#: Template/Roles/edit.ctp:16
+#: Template/Roles/index.ctp:11
+#: Template/Roles/view.ctp:14
+#: Template/Sections/add.ctp:14
+#: Template/Sections/edit.ctp:20
+#: Template/Sections/index.ctp:15
+#: Template/Sections/view.ctp:18
+#: Template/Users/add.ctp:9
+#: Template/Users/edit.ctp:15
+#: Template/Users/view.ctp:12
+msgid "List Users"
+msgstr ""
+
+#: Template/AuthRoles/add.ctp:11
+#: Template/AuthRoles/edit.ctp:17
+#: Template/AuthRoles/index.ctp:12
+#: Template/AuthRoles/view.ctp:15
+#: Template/Roles/add.ctp:11
+#: Template/Roles/edit.ctp:17
+#: Template/Roles/index.ctp:12
+#: Template/Roles/view.ctp:15
+#: Template/Sections/add.ctp:15
+#: Template/Sections/edit.ctp:21
+#: Template/Sections/index.ctp:16
+#: Template/Sections/view.ctp:19
+#: Template/Users/index.ctp:10
+#: Template/Users/view.ctp:13
+msgid "New User"
+msgstr ""
+
+#: Template/AuthRoles/add.ctp:17
+msgid "Add Auth Role"
+msgstr ""
+
+#: Template/AuthRoles/add.ctp:22
+#: Template/AuthRoles/edit.ctp:28
+#: Template/Districts/add.ctp:22
+#: Template/Districts/edit.ctp:28
+#: Template/Roles/add.ctp:22
+#: Template/Roles/edit.ctp:28
+#: Template/ScoutGroups/add.ctp:25
+#: Template/ScoutGroups/edit.ctp:31
+#: Template/SectionTypes/add.ctp:22
+#: Template/SectionTypes/edit.ctp:28
+#: Template/Sections/add.ctp:28
+#: Template/Sections/edit.ctp:34
+#: Template/Users/add.ctp:47
+#: Template/Users/edit.ctp:53
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/bake/src/Template/Bake/Element/form.ctp:102
+#: View/Helper/FormHelper.php:1896
+msgid "Submit"
+msgstr ""
+
+#: Template/AuthRoles/edit.ctp:10
+#: Template/AuthRoles/index.ctp:37
+#: Template/AuthRoles/view.ctp:100
+#: Template/Districts/edit.ctp:10
+#: Template/Districts/index.ctp:37
+#: Template/Districts/view.ctp:60
+#: Template/Roles/edit.ctp:10
+#: Template/Roles/index.ctp:37
+#: Template/Roles/view.ctp:100
+#: Template/ScoutGroups/edit.ctp:10
+#: Template/ScoutGroups/index.ctp:41
+#: Template/ScoutGroups/view.ctp:68
+#: Template/SectionTypes/edit.ctp:10
+#: Template/SectionTypes/index.ctp:37
+#: Template/SectionTypes/view.ctp:62
+#: Template/Sections/edit.ctp:10
+#: Template/Sections/index.ctp:45
+#: Template/Sections/view.ctp:112
+#: Template/Users/edit.ctp:10
+#: Template/Users/index.ctp:81
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/bake/src/Template/Bake/Element/form.ctp:33
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/bake/src/Template/Bake/Template/index.ctp:106
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/bake/src/Template/Bake/Template/view.ctp:171
+msgid "Delete"
+msgstr ""
+
+#: Template/AuthRoles/edit.ctp:12
+#: Template/AuthRoles/index.ctp:37
+#: Template/AuthRoles/view.ctp:11;100
+#: Template/Districts/edit.ctp:12
+#: Template/Districts/index.ctp:37
+#: Template/Districts/view.ctp:11;60
+#: Template/Roles/edit.ctp:12
+#: Template/Roles/index.ctp:37
+#: Template/Roles/view.ctp:11;100
+#: Template/ScoutGroups/edit.ctp:12
+#: Template/ScoutGroups/index.ctp:41
+#: Template/ScoutGroups/view.ctp:11;68
+#: Template/SectionTypes/edit.ctp:12
+#: Template/SectionTypes/index.ctp:37
+#: Template/SectionTypes/view.ctp:11;62
+#: Template/Sections/edit.ctp:12
+#: Template/Sections/index.ctp:45
+#: Template/Sections/view.ctp:11;112
+#: Template/Users/edit.ctp:12
+#: Template/Users/index.ctp:81
+#: Template/Users/view.ctp:11
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/bake/src/Template/Bake/Element/form.ctp:35
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/bake/src/Template/Bake/Template/index.ctp:106
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/bake/src/Template/Bake/Template/view.ctp:66;171
+msgid "Are you sure you want to delete # {0}?"
+msgstr ""
+
+#: Template/AuthRoles/edit.ctp:23
+#: Template/AuthRoles/view.ctp:10
+msgid "Edit Auth Role"
+msgstr ""
+
+#: Template/AuthRoles/index.ctp:10
+#: Template/AuthRoles/view.ctp:13
+#: Template/Users/add.ctp:13
+#: Template/Users/edit.ctp:19
+#: Template/Users/index.ctp:14
+#: Template/Users/view.ctp:17
+msgid "New Auth Role"
+msgstr ""
+
+#: Template/AuthRoles/index.ctp:16
+msgid "Auth Roles"
+msgstr ""
+
+#: Template/AuthRoles/index.ctp:35
+#: Template/AuthRoles/view.ctp:98
+#: Template/Districts/index.ctp:35
+#: Template/Districts/view.ctp:58
+#: Template/Roles/index.ctp:35
+#: Template/Roles/view.ctp:98
+#: Template/ScoutGroups/index.ctp:39
+#: Template/ScoutGroups/view.ctp:66
+#: Template/SectionTypes/index.ctp:35
+#: Template/SectionTypes/view.ctp:60
+#: Template/Sections/index.ctp:43
+#: Template/Sections/view.ctp:110
+#: Template/Users/index.ctp:79
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/bake/src/Template/Bake/Template/index.ctp:104
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/bake/src/Template/Bake/Template/view.ctp:169
+msgid "View"
+msgstr ""
+
+#: Template/AuthRoles/index.ctp:36
+#: Template/AuthRoles/view.ctp:99
+#: Template/Districts/index.ctp:36
+#: Template/Districts/view.ctp:59
+#: Template/Roles/index.ctp:36
+#: Template/Roles/view.ctp:99
+#: Template/ScoutGroups/index.ctp:40
+#: Template/ScoutGroups/view.ctp:67
+#: Template/SectionTypes/index.ctp:36
+#: Template/SectionTypes/view.ctp:61
+#: Template/Sections/index.ctp:44
+#: Template/Sections/view.ctp:111
+#: Template/Users/index.ctp:80
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/bake/src/Template/Bake/Template/index.ctp:105
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/bake/src/Template/Bake/Template/view.ctp:170
+msgid "Edit"
+msgstr ""
+
+#: Template/AuthRoles/index.ctp:45
+#: Template/Districts/index.ctp:45
+#: Template/Roles/index.ctp:45
+#: Template/ScoutGroups/index.ctp:49
+#: Template/SectionTypes/index.ctp:45
+#: Template/Sections/index.ctp:53
+#: Template/Users/index.ctp:89
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/bake/src/Template/Bake/Template/index.ctp:114
+msgid "first"
+msgstr ""
+
+#: Template/AuthRoles/index.ctp:46
+#: Template/Districts/index.ctp:46
+#: Template/Roles/index.ctp:46
+#: Template/ScoutGroups/index.ctp:50
+#: Template/SectionTypes/index.ctp:46
+#: Template/Sections/index.ctp:54
+#: Template/Users/index.ctp:90
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/bake/src/Template/Bake/Template/index.ctp:115
+msgid "previous"
+msgstr ""
+
+#: Template/AuthRoles/index.ctp:48
+#: Template/Districts/index.ctp:48
+#: Template/Roles/index.ctp:48
+#: Template/ScoutGroups/index.ctp:52
+#: Template/SectionTypes/index.ctp:48
+#: Template/Sections/index.ctp:56
+#: Template/Users/index.ctp:92
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/bake/src/Template/Bake/Template/index.ctp:117
+msgid "next"
+msgstr ""
+
+#: Template/AuthRoles/index.ctp:49
+#: Template/Districts/index.ctp:49
+#: Template/Roles/index.ctp:49
+#: Template/ScoutGroups/index.ctp:53
+#: Template/SectionTypes/index.ctp:49
+#: Template/Sections/index.ctp:57
+#: Template/Users/index.ctp:93
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/bake/src/Template/Bake/Template/index.ctp:118
+msgid "last"
+msgstr ""
+
+#: Template/AuthRoles/index.ctp:51
+#: Template/Districts/index.ctp:51
+#: Template/Roles/index.ctp:51
+#: Template/ScoutGroups/index.ctp:55
+#: Template/SectionTypes/index.ctp:51
+#: Template/Sections/index.ctp:59
+#: Template/Users/index.ctp:95
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/bake/src/Template/Bake/Template/index.ctp:120
+msgid "Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total"
+msgstr ""
+
+#: Template/AuthRoles/view.ctp:11
+msgid "Delete Auth Role"
+msgstr ""
+
+#: Template/AuthRoles/view.ctp:22
+#: Template/Users/view.ctp:34
+msgid "Auth Role"
+msgstr ""
+
+#: Template/AuthRoles/view.ctp:26;43
+#: Template/Districts/view.ctp:26;43
+#: Template/Roles/view.ctp:26;43
+#: Template/ScoutGroups/view.ctp:32;49
+#: Template/SectionTypes/view.ctp:26;43
+#: Template/Sections/view.ctp:38;55
+#: Template/Users/view.ctp:82
+msgid "Id"
+msgstr ""
+
+#: Template/AuthRoles/view.ctp:30;60
+#: Template/Districts/view.ctp:30;46
+#: Template/Roles/view.ctp:30;60
+#: Template/ScoutGroups/view.ctp:36;53
+#: Template/SectionTypes/view.ctp:30;47
+#: Template/Sections/view.ctp:42;72
+#: Template/Users/view.ctp:106
+msgid "Created"
+msgstr ""
+
+#: Template/AuthRoles/view.ctp:34;61
+#: Template/Districts/view.ctp:34;47
+#: Template/Roles/view.ctp:34;61
+#: Template/ScoutGroups/view.ctp:40;54
+#: Template/SectionTypes/view.ctp:34;48
+#: Template/Sections/view.ctp:46;73
+#: Template/Users/view.ctp:110
+msgid "Modified"
+msgstr ""
+
+#: Template/AuthRoles/view.ctp:39
+#: Template/Roles/view.ctp:39
+#: Template/Sections/view.ctp:51
+msgid "Related Users"
+msgstr ""
+
+#: Template/AuthRoles/view.ctp:44
+#: Template/Roles/view.ctp:44
+#: Template/Sections/view.ctp:56
+#: Template/Users/view.ctp:26
+msgid "Username"
+msgstr ""
+
+#: Template/AuthRoles/view.ctp:45
+#: Template/Roles/view.ctp:45
+#: Template/Sections/view.ctp:57
+#: Template/Users/view.ctp:102
+msgid "Last Login"
+msgstr ""
+
+#: Template/AuthRoles/view.ctp:46
+#: Template/Roles/view.ctp:46
+#: Template/Sections/view.ctp:58
+#: Template/Users/view.ctp:86
+msgid "Login Count"
+msgstr ""
+
+#: Template/AuthRoles/view.ctp:47
+#: Template/Roles/view.ctp:47
+#: Template/Sections/view.ctp:59
+msgid "Role Id"
+msgstr ""
+
+#: Template/AuthRoles/view.ctp:48
+#: Template/Roles/view.ctp:48
+#: Template/Sections/view.ctp:60
+msgid "Auth Role Id"
+msgstr ""
+
+#: Template/AuthRoles/view.ctp:49
+#: Template/Roles/view.ctp:49
+#: Template/Sections/view.ctp:61
+msgid "Section Id"
+msgstr ""
+
+#: Template/AuthRoles/view.ctp:50
+#: Template/Roles/view.ctp:50
+#: Template/Sections/view.ctp:62
+#: Template/Users/view.ctp:42
+msgid "First Name"
+msgstr ""
+
+#: Template/AuthRoles/view.ctp:51
+#: Template/Roles/view.ctp:51
+#: Template/Sections/view.ctp:63
+#: Template/Users/view.ctp:46
+msgid "Last Name"
+msgstr ""
+
+#: Template/AuthRoles/view.ctp:52
+#: Template/Roles/view.ctp:52
+#: Template/Sections/view.ctp:64
+#: Template/Users/view.ctp:50
+msgid "Email"
+msgstr ""
+
+#: Template/AuthRoles/view.ctp:53
+#: Template/Roles/view.ctp:53
+#: Template/Sections/view.ctp:65
+#: Template/Users/view.ctp:54
+msgid "Password"
+msgstr ""
+
+#: Template/AuthRoles/view.ctp:54
+#: Template/Roles/view.ctp:54
+#: Template/Sections/view.ctp:66
+#: Template/Users/view.ctp:58
+msgid "Phone"
+msgstr ""
+
+#: Template/AuthRoles/view.ctp:55
+#: Template/Roles/view.ctp:55
+#: Template/Sections/view.ctp:67
+#: Template/Users/view.ctp:62
+msgid "Address 1"
+msgstr ""
+
+#: Template/AuthRoles/view.ctp:56
+#: Template/Roles/view.ctp:56
+#: Template/Sections/view.ctp:68
+#: Template/Users/view.ctp:66
+msgid "Address 2"
+msgstr ""
+
+#: Template/AuthRoles/view.ctp:57
+#: Template/Roles/view.ctp:57
+#: Template/Sections/view.ctp:69
+#: Template/Users/view.ctp:70
+msgid "City"
+msgstr ""
+
+#: Template/AuthRoles/view.ctp:58
+#: Template/Roles/view.ctp:58
+#: Template/Sections/view.ctp:70
+#: Template/Users/view.ctp:74
+msgid "County"
+msgstr ""
+
+#: Template/AuthRoles/view.ctp:59
+#: Template/Roles/view.ctp:59
+#: Template/Sections/view.ctp:71
+#: Template/Users/view.ctp:78
+msgid "Postcode"
+msgstr ""
+
+#: Template/AuthRoles/view.ctp:62
+#: Template/Roles/view.ctp:62
+#: Template/Sections/view.ctp:74
+#: Template/Users/view.ctp:90
+msgid "Osm User Id"
+msgstr ""
+
+#: Template/AuthRoles/view.ctp:63
+#: Template/Roles/view.ctp:63
+#: Template/Sections/view.ctp:75
+#: Template/Users/view.ctp:123
+msgid "Osm Secret"
+msgstr ""
+
+#: Template/AuthRoles/view.ctp:64
+#: Template/Roles/view.ctp:64
+#: Template/Sections/view.ctp:76
+#: Template/Users/view.ctp:94
+msgid "Osm Linked"
+msgstr ""
+
+#: Template/AuthRoles/view.ctp:65
+#: Template/Roles/view.ctp:65
+#: Template/Sections/view.ctp:77
+#: Template/Users/view.ctp:114
+msgid "Osm Linkdate"
+msgstr ""
+
+#: Template/AuthRoles/view.ctp:66
+#: Template/Roles/view.ctp:66
+#: Template/Sections/view.ctp:78
+#: Template/Users/view.ctp:98
+msgid "Osm Current Term"
+msgstr ""
+
+#: Template/AuthRoles/view.ctp:67
+#: Template/Roles/view.ctp:67
+#: Template/Sections/view.ctp:79
+#: Template/Users/view.ctp:118
+msgid "Osm Term End"
+msgstr ""
+
+#: Template/Districts/add.ctp:9
+#: Template/Districts/edit.ctp:15
+#: Template/Districts/view.ctp:12
+#: Template/ScoutGroups/add.ctp:10
+#: Template/ScoutGroups/edit.ctp:16
+#: Template/ScoutGroups/index.ctp:11
+#: Template/ScoutGroups/view.ctp:14
+msgid "List Districts"
+msgstr ""
+
+#: Template/Districts/add.ctp:10
+#: Template/Districts/edit.ctp:16
+#: Template/Districts/index.ctp:11
+#: Template/Districts/view.ctp:14
+#: Template/ScoutGroups/add.ctp:9
+#: Template/ScoutGroups/edit.ctp:15
+#: Template/ScoutGroups/view.ctp:12
+#: Template/Sections/add.ctp:10
+#: Template/Sections/edit.ctp:16
+#: Template/Sections/index.ctp:11
+#: Template/Sections/view.ctp:14
+msgid "List Scout Groups"
+msgstr ""
+
+#: Template/Districts/add.ctp:11
+#: Template/Districts/edit.ctp:17
+#: Template/Districts/index.ctp:12
+#: Template/Districts/view.ctp:15
+#: Template/ScoutGroups/index.ctp:10
+#: Template/ScoutGroups/view.ctp:13
+#: Template/Sections/add.ctp:11
+#: Template/Sections/edit.ctp:17
+#: Template/Sections/index.ctp:12
+#: Template/Sections/view.ctp:15
+msgid "New Scout Group"
+msgstr ""
+
+#: Template/Districts/add.ctp:17
+msgid "Add District"
+msgstr ""
+
+#: Template/Districts/edit.ctp:23
+#: Template/Districts/view.ctp:10
+msgid "Edit District"
+msgstr ""
+
+#: Template/Districts/index.ctp:10
+#: Template/Districts/view.ctp:13
+#: Template/ScoutGroups/add.ctp:11
+#: Template/ScoutGroups/edit.ctp:17
+#: Template/ScoutGroups/index.ctp:12
+#: Template/ScoutGroups/view.ctp:15
+msgid "New District"
+msgstr ""
+
+#: Template/Districts/index.ctp:16
+msgid "Districts"
+msgstr ""
+
+#: Template/Districts/view.ctp:11
+msgid "Delete District"
+msgstr ""
+
+#: Template/Districts/view.ctp:22
+#: Template/ScoutGroups/view.ctp:28
+msgid "District"
+msgstr ""
+
+#: Template/Districts/view.ctp:39
+msgid "Related Scout Groups"
+msgstr ""
+
+#: Template/Districts/view.ctp:44
+#: Template/ScoutGroups/view.ctp:24
+#: Template/Sections/view.ctp:30
+msgid "Scout Group"
+msgstr ""
+
+#: Template/Districts/view.ctp:45
+msgid "District Id"
+msgstr ""
+
+#: Template/Layout/error.ctp:35
+#: Template/Error/error400.ctp:36
+#: Template/Error/error500.ctp:41
+msgid "Error"
+msgstr ""
+
+#: Template/Layout/error.ctp:43
+msgid "Back"
+msgstr ""
+
+#: Template/Roles/add.ctp:9
+#: Template/Roles/edit.ctp:15
+#: Template/Roles/view.ctp:12
+#: Template/Users/add.ctp:10
+#: Template/Users/edit.ctp:16
+#: Template/Users/index.ctp:11
+#: Template/Users/view.ctp:14
+msgid "List Roles"
+msgstr ""
+
+#: Template/Roles/add.ctp:17
+msgid "Add Role"
+msgstr ""
+
+#: Template/Roles/edit.ctp:23
+#: Template/Roles/view.ctp:10
+msgid "Edit Role"
+msgstr ""
+
+#: Template/Roles/index.ctp:10
+#: Template/Roles/view.ctp:13
+#: Template/Users/add.ctp:11
+#: Template/Users/edit.ctp:17
+#: Template/Users/index.ctp:12
+#: Template/Users/view.ctp:15
+msgid "New Role"
+msgstr ""
+
+#: Template/Roles/index.ctp:16
+msgid "Roles"
+msgstr ""
+
+#: Template/Roles/view.ctp:11
+msgid "Delete Role"
+msgstr ""
+
+#: Template/Roles/view.ctp:22
+#: Template/Users/view.ctp:30
+msgid "Role"
+msgstr ""
+
+#: Template/ScoutGroups/add.ctp:12
+#: Template/ScoutGroups/edit.ctp:18
+#: Template/ScoutGroups/index.ctp:13
+#: Template/ScoutGroups/view.ctp:16
+#: Template/SectionTypes/add.ctp:10
+#: Template/SectionTypes/edit.ctp:16
+#: Template/SectionTypes/index.ctp:11
+#: Template/SectionTypes/view.ctp:14
+#: Template/Sections/add.ctp:9
+#: Template/Sections/edit.ctp:15
+#: Template/Sections/view.ctp:12
+#: Template/Users/add.ctp:14
+#: Template/Users/edit.ctp:20
+#: Template/Users/index.ctp:15
+#: Template/Users/view.ctp:18
+msgid "List Sections"
+msgstr ""
+
+#: Template/ScoutGroups/add.ctp:13
+#: Template/ScoutGroups/edit.ctp:19
+#: Template/ScoutGroups/index.ctp:14
+#: Template/ScoutGroups/view.ctp:17
+#: Template/SectionTypes/add.ctp:11
+#: Template/SectionTypes/edit.ctp:17
+#: Template/SectionTypes/index.ctp:12
+#: Template/SectionTypes/view.ctp:15
+#: Template/Sections/index.ctp:10
+#: Template/Sections/view.ctp:13
+#: Template/Users/add.ctp:15
+#: Template/Users/edit.ctp:21
+#: Template/Users/index.ctp:16
+#: Template/Users/view.ctp:19
+msgid "New Section"
+msgstr ""
+
+#: Template/ScoutGroups/add.ctp:19
+msgid "Add Scout Group"
+msgstr ""
+
+#: Template/ScoutGroups/edit.ctp:25
+#: Template/ScoutGroups/view.ctp:10
+msgid "Edit Scout Group"
+msgstr ""
+
+#: Template/ScoutGroups/index.ctp:18
+msgid "Scout Groups"
+msgstr ""
+
+#: Template/ScoutGroups/view.ctp:11
+msgid "Delete Scout Group"
+msgstr ""
+
+#: Template/ScoutGroups/view.ctp:45
+#: Template/SectionTypes/view.ctp:39
+msgid "Related Sections"
+msgstr ""
+
+#: Template/ScoutGroups/view.ctp:50
+#: Template/SectionTypes/view.ctp:44
+#: Template/Sections/view.ctp:26
+#: Template/Users/view.ctp:38
+msgid "Section"
+msgstr ""
+
+#: Template/ScoutGroups/view.ctp:51
+#: Template/SectionTypes/view.ctp:45
+msgid "Scout Group Id"
+msgstr ""
+
+#: Template/ScoutGroups/view.ctp:52
+#: Template/SectionTypes/view.ctp:46
+msgid "Section Type Id"
+msgstr ""
+
+#: Template/SectionTypes/add.ctp:9
+#: Template/SectionTypes/edit.ctp:15
+#: Template/SectionTypes/view.ctp:12
+#: Template/Sections/add.ctp:12
+#: Template/Sections/edit.ctp:18
+#: Template/Sections/index.ctp:13
+#: Template/Sections/view.ctp:16
+msgid "List Section Types"
+msgstr ""
+
+#: Template/SectionTypes/add.ctp:17
+msgid "Add Section Type"
+msgstr ""
+
+#: Template/SectionTypes/edit.ctp:23
+#: Template/SectionTypes/view.ctp:10
+msgid "Edit Section Type"
+msgstr ""
+
+#: Template/SectionTypes/index.ctp:10
+#: Template/SectionTypes/view.ctp:13
+#: Template/Sections/add.ctp:13
+#: Template/Sections/edit.ctp:19
+#: Template/Sections/index.ctp:14
+#: Template/Sections/view.ctp:17
+msgid "New Section Type"
+msgstr ""
+
+#: Template/SectionTypes/index.ctp:16
+msgid "Section Types"
+msgstr ""
+
+#: Template/SectionTypes/view.ctp:11
+msgid "Delete Section Type"
+msgstr ""
+
+#: Template/SectionTypes/view.ctp:22
+#: Template/Sections/view.ctp:34
+msgid "Section Type"
+msgstr ""
+
+#: Template/Sections/add.ctp:21
+msgid "Add Section"
+msgstr ""
+
+#: Template/Sections/edit.ctp:27
+#: Template/Sections/view.ctp:10
+msgid "Edit Section"
+msgstr ""
+
+#: Template/Sections/index.ctp:20
+msgid "Sections"
+msgstr ""
+
+#: Template/Sections/view.ctp:11
+msgid "Delete Section"
+msgstr ""
+
+#: Template/Users/add.ctp:21
+msgid "Add User"
+msgstr ""
+
+#: Template/Users/edit.ctp:27
+#: Template/Users/view.ctp:10
+msgid "Edit User"
+msgstr ""
+
+#: Template/Users/index.ctp:20
+msgid "Users"
+msgstr ""
+
+#: Template/Users/view.ctp:11
+msgid "Delete User"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/bake/src/Template/Bake/Element/form.ctp:39
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/bake/src/Template/Bake/Template/view.ctp:67
+msgid "List <%= $pluralHumanName %>"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/bake/src/Template/Bake/Element/form.ctp:46
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/bake/src/Template/Bake/Template/index.ctp:51
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/bake/src/Template/Bake/Template/view.ctp:75
+msgid "List <%= $this->_pluralHumanName($alias) %>"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/bake/src/Template/Bake/Element/form.ctp:47
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/bake/src/Template/Bake/Template/index.ctp:52
+msgid "New <%= $this->_singularHumanName($alias) %>"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/bake/src/Template/Bake/Element/form.ctp:59
+msgid "<%= Inflector::humanize($action) %> <%= $singularHumanName %>"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/bake/src/Template/Bake/Template/index.ctp:44
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/bake/src/Template/Bake/Template/view.ctp:68
+msgid "New <%= $singularHumanName %>"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/bake/src/Template/Bake/Template/index.ctp:62
+msgid "<%= $pluralHumanName %>"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/bake/src/Template/Bake/Template/login.ctp:25
+msgid "Please enter your username and password"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/bake/src/Template/Bake/Template/login.ctp:29
+msgid "Login"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/bake/src/Template/Bake/Template/view.ctp:65
+msgid "Edit <%= $singularHumanName %>"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/bake/src/Template/Bake/Template/view.ctp:66
+msgid "Delete <%= $singularHumanName %>"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/bake/src/Template/Bake/Template/view.ctp:76
+msgid "New <%= Inflector::humanize(Inflector::singularize(Inflector::underscore($alias))) %>"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/bake/src/Template/Bake/Template/view.ctp:94
+msgid "<%= Inflector::humanize($details["
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/bake/src/Template/Bake/Template/view.ctp:99;116;132;141;158
+msgid "<%= Inflector::humanize($field) %>"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/bake/src/Template/Bake/Template/view.ctp:108
+msgid "<%= Inflector::humanize(Inflector::singularize(Inflector::underscore($alias))) %>"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/bake/src/Template/Bake/Template/view.ctp:133
+msgid "Yes"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/bake/src/Template/Bake/Template/view.ctp:133
+msgid "No"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/bake/src/Template/Bake/Template/view.ctp:153
+msgid "Related <%= $otherPluralHumanName %>"
+msgstr ""
+
+#: Template/Error/error400.ctp:37
+msgid "The requested address {0} was not found on this server."
+msgstr ""
+
+#: Template/Error/error500.ctp:39
+msgid "An Internal Error Has Occurred"
+msgstr ""
+
+#: Controller/Component/AuthComponent.php:496
+msgid "You are not authorized to access that location."
+msgstr ""
+
+#: Controller/Component/CsrfComponent.php:155
+msgid "Missing CSRF token cookie"
+msgstr ""
+
+#: Controller/Component/CsrfComponent.php:159
+msgid "CSRF token mismatch."
+msgstr ""
+
+#: Error/ExceptionRenderer.php:258
+msgid "Not Found"
+msgstr ""
+
+#: Error/ExceptionRenderer.php:260
+msgid "An Internal Error Has Occurred."
+msgstr ""
+
+#: Http/Response.php:2258
+msgid "The requested file contains `..` and will not be read."
+msgstr ""
+
+#: Http/Response.php:2269
+msgid "The requested file was not found"
+msgstr ""
+
+#: I18n/Number.php:90
+msgid "{0,number,#,###.##} KB"
+msgstr ""
+
+#: I18n/Number.php:92
+msgid "{0,number,#,###.##} MB"
+msgstr ""
+
+#: I18n/Number.php:94
+msgid "{0,number,#,###.##} GB"
+msgstr ""
+
+#: I18n/Number.php:96
+msgid "{0,number,#,###.##} TB"
+msgstr ""
+
+#: I18n/Number.php:88
+msgid "{0,number,integer} Byte"
+msgid_plural "{0,number,integer} Bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:80
+msgid "{0} from now"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:80
+msgid "{0} ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:83
+msgid "{0} after"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:83
+msgid "{0} before"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:114
+msgid "just now"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:151
+msgid "about a second ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:152
+msgid "about a minute ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:153
+msgid "about an hour ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:154;332
+msgid "about a day ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:155;333
+msgid "about a week ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:156;334
+msgid "about a month ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:157;335
+msgid "about a year ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:168
+msgid "in about a second"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:169
+msgid "in about a minute"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:170
+msgid "in about an hour"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:171;346
+msgid "in about a day"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:172;347
+msgid "in about a week"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:173;348
+msgid "in about a month"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:174;349
+msgid "in about a year"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:304
+msgid "today"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:370
+msgid "%s ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:371
+msgid "on %s"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:47;126;316
+msgid "{0} year"
+msgid_plural "{0} years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:51;129;319
+msgid "{0} month"
+msgid_plural "{0} months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:57;132;322
+msgid "{0} week"
+msgid_plural "{0} weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:59;135;325
+msgid "{0} day"
+msgid_plural "{0} days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:64;138
+msgid "{0} hour"
+msgid_plural "{0} hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:68;141
+msgid "{0} minute"
+msgid_plural "{0} minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:72;144
+msgid "{0} second"
+msgid_plural "{0} seconds"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ORM/RulesChecker.php:57
+msgid "This value is already in use"
+msgstr ""
+
+#: ORM/RulesChecker.php:104
+msgid "This value does not exist"
+msgstr ""
+
+#: ORM/RulesChecker.php:128
+msgid "The count does not match {0}{1}"
+msgstr ""
+
+#: Utility/Text.php:899
+msgid "and"
+msgstr ""
+
+#: Validation/Validator.php:103
+msgid "This field is required"
+msgstr ""
+
+#: Validation/Validator.php:104
+msgid "This field cannot be left empty"
+msgstr ""
+
+#: Validation/Validator.php:1801
+msgid "The provided value is invalid"
+msgstr ""
+
+#: View/Helper/FormHelper.php:1016
+msgid "New %s"
+msgstr ""
+
+#: View/Helper/FormHelper.php:1019
+msgid "Edit %s"
+msgstr ""
+
+#: View/Helper/HtmlHelper.php:794
+msgid "Home"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:540
+msgid "January"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:541
+msgid "February"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:542
+msgid "March"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:543
+msgid "April"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:544
+msgid "May"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:545
+msgid "June"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:546
+msgid "July"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:547
+msgid "August"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:548
+msgid "September"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:549
+msgid "October"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:550
+msgid "November"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:551
+msgid "December"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/DebugTimer.php:135
+msgid "Core Processing (Derived from $_SERVER[\"REQUEST_TIME\"])"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php:53
+msgid "Controller initialization"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php:62
+msgid "Controller action start"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php:63;68
+msgid "Controller action"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php:73;74;94
+msgid "View Render start"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php:83;88
+msgid "Render {0}"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php:95
+msgid "Controller shutdown"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Shell/BenchmarkShell.php:45
+msgid "-> Testing :url"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Shell/BenchmarkShell.php:72
+msgid "Total Requests made: :requests"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Shell/BenchmarkShell.php:73
+msgid "Total Time elapsed: :duration (seconds)"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Shell/BenchmarkShell.php:77
+msgid "Requests/Second: :rps req/sec"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Shell/BenchmarkShell.php:81
+msgid "Average request time: :average-time seconds"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Shell/BenchmarkShell.php:85
+msgid "Standard deviation of average request time: :std-dev"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Shell/BenchmarkShell.php:89
+msgid "Longest/shortest request: :longest sec/:shortest sec"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Shell/BenchmarkShell.php:147
+msgid "Allows you to obtain some rough benchmarking statisticsabout a fully qualified URL."
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Shell/BenchmarkShell.php:153
+msgid "The URL to request."
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Shell/BenchmarkShell.php:158
+msgid "Number of iterations to perform."
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Shell/BenchmarkShell.php:162
+msgid "Maximum total time for all iterations, in seconds.If a single iteration takes more than the timeout, only one request will be made"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Shell/BenchmarkShell.php:168
+msgid "Example Use: `cake benchmark --n 10 --t 100 http://localhost/testsite`. <info>Note:</info> this benchmark does not include browser render times."
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/cache_panel.ctp:21
+msgid "There were no cache operations this request."
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/cache_panel.ctp:25
+msgid "{0} Metrics"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/cache_panel.ctp:31
+msgid "Metric"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/cache_panel.ctp:32
+msgid "Total"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/environment_panel.ctp:28
+msgid "Application Constants"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/environment_panel.ctp:49
+msgid "No application environment available."
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/environment_panel.ctp:53
+msgid "CakePHP Constants"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/environment_panel.ctp:74
+msgid "CakePHP environment unavailable."
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/environment_panel.ctp:78
+msgid "PHP Environment"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/environment_panel.ctp:99
+msgid "PHP environment unavailable."
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/environment_panel.ctp:104
+msgid "Hidef Environment"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/environment_panel.ctp:125
+msgid "No Hidef environment available."
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/history_panel.ctp:23
+msgid "No previous requests logged."
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/history_panel.ctp:25
+msgid "previous requests available"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/history_panel.ctp:29;53
+msgid "Back to current request"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/log_panel.ctp:21
+msgid "There were no log entries made this request"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/log_panel.ctp:24
+msgid "{0} Messages"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/log_panel.ctp:28
+msgid "Time"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/log_panel.ctp:29
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/timer_panel.ctp:32
+msgid "Message"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/packages_panel.ctp:22
+msgid "{0} not found"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/packages_panel.ctp:27
+msgid "Direct dependencies only"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/packages_panel.ctp:32
+msgid "Requirements ({0})"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/packages_panel.ctp:58
+msgid "Dev Requirements ({0})"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/request_panel.ctp:31
+msgid "Headers already sent at file {0} and line {1}."
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/request_panel.ctp:40
+msgid "No post data."
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/request_panel.ctp:49
+msgid "No querystring data."
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/request_panel.ctp:59
+msgid "No Cookie data."
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/routes_panel.ctp:11
+msgid "Route name"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/routes_panel.ctp:12
+msgid "URI template"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/routes_panel.ctp:13
+msgid "Defaults"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/sql_log_panel.ctp:58
+msgid "Total Time: {0} ms &mdash; Total Queries: {1} &mdash; Total Rows: {2}"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/sql_log_panel.ctp:71
+msgid "Query"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/sql_log_panel.ctp:72
+msgid "Rows"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/sql_log_panel.ctp:73
+msgid "Took (ms)"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/sql_log_panel.ctp:91
+msgid "No active database connections"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/timer_panel.ctp:23
+msgid "Memory"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/timer_panel.ctp:25
+msgid "Peak Memory Use:"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/timer_panel.ctp:33
+msgid "Memory Use"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/timer_panel.ctp:48
+msgid "Timers"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/timer_panel.ctp:50
+msgid "Total Request Time:"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/timer_panel.ctp:57
+msgid "Event"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/timer_panel.ctp:58
+msgid "Time in ms"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/timer_panel.ctp:59
+msgid "Timeline"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Template/Element/variables_panel.ctp:28
+msgid "Sort variables by name"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/View/Helper/SimpleGraphHelper.php:76
+msgid "Starting {0}ms into the request, taking {1}ms"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/View/Helper/TidyHelper.php:110
+msgid "No markup errors found"
+msgstr ""
+
+#: /Users/jacob/PhpstormProjects/BadgeReporting/vendor/cakephp/debug_kit/src/Shell/WhitespaceShell.php:98
+msgid "Absolute path or relative to APP."
+msgstr ""
+
