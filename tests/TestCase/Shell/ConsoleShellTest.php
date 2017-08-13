@@ -58,7 +58,6 @@ class ConsoleShellTest extends TestCase
         $expected = 5;
         $actual = $this->ConsoleShell->main();
 
-
         $this->assertEquals($expected, $actual);
     }
 
